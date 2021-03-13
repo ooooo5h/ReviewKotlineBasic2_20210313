@@ -11,6 +11,15 @@ class MainActivity : AppCompatActivity() {
 
         sendBtn.setOnClickListener {
 
+//            버튼이 눌리면
+//            1. inputEdt에 적힌 내용을 inputMessage 변수에 메모 : get
+
+            val inputMessage = inputEdt.text.toString()
+
+//            2. contentTxt의 text속성값을 inputMessage에 적힌 값으로 변경 : set
+
+            contentTxt.text = inputMessage
+
 
         }
 
